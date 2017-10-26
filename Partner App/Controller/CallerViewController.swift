@@ -55,8 +55,19 @@ class CallerViewController: UIViewController {
 
     @IBAction func callApplicationButtonClicked(_ sender: Any) {
         
-        self.openAppURL("ihealth-suivi://") { (result) in
-            print("Open: \(result)")
+        if let userStored = DataManager.sharedInstnce.loadData(forKey: "user") as? User {
+            
+            let encodedName = String(describing: userStored.name.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!)
+            let encodedPhoto = String(describing: userStored.photo.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!)
+            
+            self.openAppURL("ihealth-suivi://?name=\(encodedName)&height=\(userStored.height)&photo=\(encodedPhoto)") { (result) in
+                print("Open: \(result)")
+            }
+        } else {
+            
+            self.openAppURL("ihealth-suivi://") { (result) in
+                print("Open: \(result)")
+            }
         }
     }
     
