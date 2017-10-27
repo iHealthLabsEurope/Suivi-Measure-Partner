@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -341,47 +342,68 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="7J1-1b-dgU">
-                                <rect key="frame" x="36" y="270" width="303.5" height="128"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7J1-1b-dgU">
+                                <rect key="frame" x="19" y="40" width="337.5" height="607"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nap-qz-quI">
-                                        <rect key="frame" x="0.0" y="0.0" width="303.5" height="40"/>
-                                        <color key="backgroundColor" red="0.2784313725" green="0.28235294119999998" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="client_logo" translatesAutoresizingMaskIntoConstraints="NO" id="dCW-Xa-DgF">
+                                        <rect key="frame" x="119" y="0.0" width="100" height="100"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="5J8-42-VlN"/>
+                                            <constraint firstAttribute="width" constant="100" id="5Jr-eO-NIM"/>
+                                            <constraint firstAttribute="width" secondItem="dCW-Xa-DgF" secondAttribute="height" id="grF-hQ-Pbq"/>
                                         </constraints>
-                                        <state key="normal" title="Call Suivi Application">
-                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="callApplicationButtonClicked:" destination="38h-CF-E1k" eventType="touchUpInside" id="6Rj-5Q-ETz"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9YF-z7-zs2">
-                                        <rect key="frame" x="0.0" y="88" width="303.5" height="40"/>
-                                        <color key="backgroundColor" red="0.958909452" green="0.95963555570000003" blue="0.95902186629999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="devices" translatesAutoresizingMaskIntoConstraints="NO" id="ji8-jD-pD8">
+                                        <rect key="frame" x="17" y="120" width="303.5" height="379"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="MZy-qt-DHs">
+                                        <rect key="frame" x="16.5" y="519" width="304.5" height="88"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nap-qz-quI">
+                                                <rect key="frame" x="0.0" y="0.0" width="304.5" height="40"/>
+                                                <color key="backgroundColor" red="0.2784313725" green="0.28235294119999998" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="5J8-42-VlN"/>
+                                                </constraints>
+                                                <state key="normal" title="Call Suivi Application">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="callApplicationButtonClicked:" destination="38h-CF-E1k" eventType="touchUpInside" id="6Rj-5Q-ETz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9YF-z7-zs2">
+                                                <rect key="frame" x="0.0" y="48" width="304.5" height="40"/>
+                                                <color key="backgroundColor" red="0.958909452" green="0.95963555570000003" blue="0.95902186629999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="5yy-UE-uhf"/>
+                                                </constraints>
+                                                <state key="normal" title="Logout">
+                                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="logoutButtonClicked:" destination="38h-CF-E1k" eventType="touchUpInside" id="QAX-AB-Ms2"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="5yy-UE-uhf"/>
+                                            <constraint firstAttribute="height" constant="88" id="ULO-PA-VNx"/>
                                         </constraints>
-                                        <state key="normal" title="Logout">
-                                            <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="logoutButtonClicked:" destination="38h-CF-E1k" eventType="touchUpInside" id="QAX-AB-Ms2"/>
-                                        </connections>
-                                    </button>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="9YF-z7-zs2" firstAttribute="width" secondItem="7J1-1b-dgU" secondAttribute="width" id="Jj6-ji-TY1"/>
-                                    <constraint firstItem="Nap-qz-quI" firstAttribute="width" secondItem="7J1-1b-dgU" secondAttribute="width" id="Wul-k9-8f2"/>
+                                    <constraint firstItem="MZy-qt-DHs" firstAttribute="width" secondItem="7J1-1b-dgU" secondAttribute="width" multiplier="9:10" id="NS7-Qc-dxT"/>
+                                    <constraint firstItem="MZy-qt-DHs" firstAttribute="top" secondItem="ji8-jD-pD8" secondAttribute="bottom" constant="20" id="Rw9-kB-du3"/>
+                                    <constraint firstItem="ji8-jD-pD8" firstAttribute="top" secondItem="dCW-Xa-DgF" secondAttribute="bottom" constant="20" id="YxV-D3-IvW"/>
+                                    <constraint firstItem="ji8-jD-pD8" firstAttribute="width" secondItem="7J1-1b-dgU" secondAttribute="width" multiplier="9:10" id="m3k-oE-Srd"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="7J1-1b-dgU" firstAttribute="centerX" secondItem="zFa-1r-ufD" secondAttribute="centerX" id="32P-O8-Pzn"/>
-                            <constraint firstItem="7J1-1b-dgU" firstAttribute="centerY" secondItem="zFa-1r-ufD" secondAttribute="centerY" id="LXy-No-v4c"/>
-                            <constraint firstItem="7J1-1b-dgU" firstAttribute="width" secondItem="zFa-1r-ufD" secondAttribute="width" multiplier="81:100" id="ijE-O7-paa"/>
+                            <constraint firstItem="mFj-tN-DHm" firstAttribute="bottom" secondItem="7J1-1b-dgU" secondAttribute="bottom" constant="20" id="5Sf-Xx-SjT"/>
+                            <constraint firstItem="7J1-1b-dgU" firstAttribute="top" secondItem="mFj-tN-DHm" secondAttribute="top" constant="20" id="iPd-PX-WeC"/>
+                            <constraint firstItem="7J1-1b-dgU" firstAttribute="width" secondItem="zFa-1r-ufD" secondAttribute="width" multiplier="9:10" id="ijE-O7-paa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mFj-tN-DHm"/>
                     </view>
@@ -391,14 +413,13 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nsY-Sc-epf" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="xQK-rV-zDh"/>
-                <tapGestureRecognizer id="1PM-hW-pZG"/>
             </objects>
             <point key="canvasLocation" x="-1028" y="266"/>
         </scene>
     </scenes>
     <resources>
         <image name="client_logo" width="342" height="342"/>
+        <image name="devices" width="233" height="341"/>
         <image name="palceholder_add_photo_profile" width="189" height="189"/>
     </resources>
 </document>
