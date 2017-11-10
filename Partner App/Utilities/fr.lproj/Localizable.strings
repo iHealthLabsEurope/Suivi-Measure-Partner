@@ -24,8 +24,11 @@
 "signinErrorMessage" = "Votre e-mail ou mot de passe sont incorrects";
 "signinMessageOkButton" = "OK";
 
+"profileButton" = "Profil";
 "callApplicationButton" = "Appel Application de Suivi";
 "logoutTitleButton" = "Se déconnecter";
+"editProfileTitleButton" = "Modifier le profil";
+"changePasswordTitleButton" = "Changer le mot de passe";
 
 // MARK: - Gerenal Use Strings
 

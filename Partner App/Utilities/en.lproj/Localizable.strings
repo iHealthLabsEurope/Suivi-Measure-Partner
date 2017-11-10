@@ -24,8 +24,11 @@
 "signinErrorMessage" = "Your email or/and password are incorrect!";
 "signinMessageOkButton" = "OK";
 
+"profileButton" = "Profile";
 "callApplicationButton" = "Call Tracker Application";
 "logoutTitleButton" = "Logout";
+"editProfileTitleButton" = "Edit Profile";
+"changePasswordTitleButton" = "Change Password";
 
 // MARK: - Gerenal Use Strings
 

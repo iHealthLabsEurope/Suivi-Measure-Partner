@@ -10,18 +10,18 @@ import UIKit
 
 class CallerViewController: UIViewController {
 
+    @IBOutlet weak var profileButton: UIButton!
     @IBOutlet weak var callApplicationButton: UIButton!
-    @IBOutlet weak var logoutButton: UIButton!
     
     private func setupView() {
+        
+        self.profileButton.setTitle("profileButton".localized, for: .normal)
+        self.profileButton.backgroundColor = Colors.secondaryColor.color
+        self.profileButton.setTitleColor(Colors.textWithBackgroudColor.color, for: .normal)
         
         self.callApplicationButton.setTitle("callApplicationButton".localized, for: .normal)
         self.callApplicationButton.backgroundColor = Colors.secondaryColor.color
         self.callApplicationButton.setTitleColor(Colors.textWithBackgroudColor.color, for: .normal)
-        
-        self.logoutButton.setTitle("logoutTitleButton".localized, for: .normal)
-        self.logoutButton.backgroundColor = Colors.backgroundColor.color
-        self.logoutButton.setTitleColor(Colors.dangerColor.color, for: .normal)
     }
     
     private func openAppURL(_ scheme: String, completionHandler: @escaping (_ success: Bool) -> ()) {
@@ -52,7 +52,10 @@ class CallerViewController: UIViewController {
 
         self.setupView()
     }
-
+    
+    @IBAction func profileButtonClicked(_ sender: Any) {
+    }
+    
     @IBAction func callApplicationButtonClicked(_ sender: Any) {
         
         if let userStored = DataManager.sharedInstnce.loadData(forKey: "user") as? User {
@@ -69,14 +72,5 @@ class CallerViewController: UIViewController {
                 print("Open: \(result)")
             }
         }
-    }
-    
-    @IBAction func logoutButtonClicked(_ sender: Any) {
-        
-        UserDefaults.standard.set(false, forKey: "session")
-        UserDefaults.standard.synchronize()
-        
-        let signinViewController = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "SignInViewController")
-        UIApplication.shared.keyWindow?.replaceRootViewControllerWith(signinViewController, animated: true, completion: nil)
     }
 }

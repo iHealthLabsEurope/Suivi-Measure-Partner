@@ -22,6 +22,8 @@
 		EC5326181F98DABA001EFEDB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC5326101F98D753001EFEDB /* Localizable.strings */; };
 		EC567F3E1F9F42C900F23613 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC5325FD1F98D4EB001EFEDB /* Info.plist */; };
 		EC598E6E1F9A2ECC0047D99B /* CallerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC598E6D1F9A2ECB0047D99B /* CallerViewController.swift */; };
+		EC7B6E841FB5AAF000EAB11F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7B6E831FB5AAF000EAB11F /* ProfileViewController.swift */; };
+		EC7B6E861FB5AAF400EAB11F /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7B6E851FB5AAF400EAB11F /* ProfileTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		EC5326131F98D916001EFEDB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		EC5326151F98D95A001EFEDB /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		EC598E6D1F9A2ECB0047D99B /* CallerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallerViewController.swift; sourceTree = "<group>"; };
+		EC7B6E831FB5AAF000EAB11F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		EC7B6E851FB5AAF400EAB11F /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +147,8 @@
 				EC5326031F98D664001EFEDB /* SignInViewController.swift */,
 				EC5326041F98D664001EFEDB /* SignUpViewController.swift */,
 				EC598E6D1F9A2ECB0047D99B /* CallerViewController.swift */,
+				EC7B6E831FB5AAF000EAB11F /* ProfileViewController.swift */,
+				EC7B6E851FB5AAF400EAB11F /* ProfileTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -294,6 +300,8 @@
 				EC5326161F98D95A001EFEDB /* DataManager.swift in Sources */,
 				EC5326061F98D664001EFEDB /* SignUpViewController.swift in Sources */,
 				EC5326051F98D664001EFEDB /* SignInViewController.swift in Sources */,
+				EC7B6E861FB5AAF400EAB11F /* ProfileTableViewController.swift in Sources */,
+				EC7B6E841FB5AAF000EAB11F /* ProfileViewController.swift in Sources */,
 				EC5325F21F98D4EB001EFEDB /* AppDelegate.swift in Sources */,
 				EC598E6E1F9A2ECC0047D99B /* CallerViewController.swift in Sources */,
 			);
