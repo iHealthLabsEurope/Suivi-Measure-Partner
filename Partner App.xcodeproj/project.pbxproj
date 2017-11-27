@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		703502D793C1FDF5E55310AC /* Pods_Partner_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D392DEFA3D8FF62E78211AD0 /* Pods_Partner_App.framework */; };
+		EC2198331FCC15880053FD95 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC5325FD1F98D4EB001EFEDB /* Info.plist */; };
 		EC5325F21F98D4EB001EFEDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5325F11F98D4EB001EFEDB /* AppDelegate.swift */; };
 		EC5325F71F98D4EB001EFEDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC5325F51F98D4EB001EFEDB /* Main.storyboard */; };
 		EC5325F91F98D4EB001EFEDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC5325F81F98D4EB001EFEDB /* Assets.xcassets */; };
@@ -20,7 +21,6 @@
 		EC5326161F98D95A001EFEDB /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5326151F98D95A001EFEDB /* DataManager.swift */; };
 		EC5326171F98DAB7001EFEDB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC53260E1F98D74D001EFEDB /* InfoPlist.strings */; };
 		EC5326181F98DABA001EFEDB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC5326101F98D753001EFEDB /* Localizable.strings */; };
-		EC567F3E1F9F42C900F23613 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC5325FD1F98D4EB001EFEDB /* Info.plist */; };
 		EC598E6E1F9A2ECC0047D99B /* CallerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC598E6D1F9A2ECB0047D99B /* CallerViewController.swift */; };
 		EC7B6E841FB5AAF000EAB11F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7B6E831FB5AAF000EAB11F /* ProfileViewController.swift */; };
 		EC7B6E861FB5AAF400EAB11F /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7B6E851FB5AAF400EAB11F /* ProfileTableViewController.swift */; };
@@ -191,7 +191,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = iHealthLabs;
 				TargetAttributes = {
 					EC5325ED1F98D4EB001EFEDB = {
@@ -226,7 +226,7 @@
 			files = (
 				EC5326181F98DABA001EFEDB /* Localizable.strings in Resources */,
 				EC5325FC1F98D4EB001EFEDB /* LaunchScreen.storyboard in Resources */,
-				EC567F3E1F9F42C900F23613 /* Info.plist in Resources */,
+				EC2198331FCC15880053FD95 /* Info.plist in Resources */,
 				EC5326171F98DAB7001EFEDB /* InfoPlist.strings in Resources */,
 				EC5325F91F98D4EB001EFEDB /* Assets.xcassets in Resources */,
 				EC5325F71F98D4EB001EFEDB /* Main.storyboard in Resources */,
@@ -466,7 +466,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Partner App/Utilities/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = eu.ihealthlabs.suiviMeasurePartner;
+				PRODUCT_BUNDLE_IDENTIFIER = eu.ihealthlabs.demo.suiviMeasurePartner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -483,7 +483,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Partner App/Utilities/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = eu.ihealthlabs.suiviMeasurePartner;
+				PRODUCT_BUNDLE_IDENTIFIER = eu.ihealthlabs.demo.suiviMeasurePartner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
